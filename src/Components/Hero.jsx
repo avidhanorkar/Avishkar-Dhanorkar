@@ -5,8 +5,8 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <div className="lg:h-[100vh] flex flex-row ">
-      <div className="h-full w-[100%] z-10">
+    <div className="lg:h-[100vh] h-fit flex flex-row ">
+      <div className="h-full w-full z-10">
        <Navbar />
         <div className="mt-[50px] lg:mt-[100px] flex flex-col gap-[20px]">
             <p className="text-2xl">Hello!  🍢</p>

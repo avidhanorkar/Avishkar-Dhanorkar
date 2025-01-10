@@ -1,16 +1,16 @@
-import React, { useRef } from "react";
+import React from "react";
 import { HashLink } from "react-router-hash-link";
 const Navbar = ({ scrollToAbout }) => {
   return (
     <>
-      <div className="flex lg:h-[10vh] pt-[50px] navbar lg:justify-between lg:items-center">
+      <div className="flex lg:h-[10vh] pt-[50px] w- navbar lg:justify-between lg:items-center">
         <div className="hidden lg:block">
           <p className="text-[30px] text-center">
             Avishkar <br /> Dhanorkar
           </p>
         </div>
 
-        <div className="flex flex-row w-full justify-around lg:gap-[50px] overflow-hidden">
+        <div className="flex flex-row w-full justify-around lg:justify-end lg:gap-[50px] overflow-hidden">
           <p
             className="text-[16px] lg:text-[24px] cursor-pointer lg:underline"
             onClick={scrollToAbout}
