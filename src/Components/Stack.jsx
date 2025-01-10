@@ -32,7 +32,7 @@ const Stack = () => {
       </div>
       <div className="flex lg:flex-row flex-col justify-between mt-[20px] lg:mt-[50px] gap-[20px]">
         {/* Technologies Section */}
-        <div className="border-[2px] rounded-md border-[#de8f52] py-7 px-10 w-[300px] text-center">
+        <div className="border-[2px] rounded-md border-[#de8f52] py-7 px-10 w-full lg:w-[300px] text-center">
           <h2 className="text-2xl font-bold mb-4 text-center w-full">Technologies</h2>
           <ul className="list-disc pl-6">
             {data.technologies.map((item, index) => (
@@ -44,7 +44,7 @@ const Stack = () => {
         </div>
 
         {/* Libraries/Framework Section */}
-        <div className="border-[2px] rounded-md border-[#97b955] py-7 px-10 w-[300px] text-center">
+        <div className="border-[2px] rounded-md border-[#97b955] py-7 px-10 lg:w-[300px] w-full text-center">
           <h2 className="text-2xl font-bold mb-4 text-center w-full">Libraries</h2>
           <ul className="list-disc pl-6">
             {data["Libraries/Framework"].map((item, index) => (
@@ -56,7 +56,7 @@ const Stack = () => {
         </div>
 
         {/* Tools Section */}
-        <div className="border-[2px] rounded-md border-[#f4dd52] py-7 px-10 w-[300px] text-center">
+        <div className="border-[2px] rounded-md border-[#f4dd52] py-7 px-10 lg:w-[300px] w-full text-center">
           <h2 className="text-2xl font-bold mb-4 text-center w-full">Tools</h2>
           <ul className="list-disc pl-6">
             {data.Tools.map((item, index) => (
@@ -68,7 +68,7 @@ const Stack = () => {
         </div>
 
         {/* Database Section */}
-        <div className="border-[2px] rounded-md border-[#000] py-7 px-10 w-[300px] text-center">
+        <div className="border-[2px] rounded-md border-[#000] py-7 px-10 lg:w-[300px] w-full text-center">
           <h2 className="text-2xl font-bold mb-4 text-center w-full">Database</h2>
           <ul className="list-disc pl-6">
             {data.Database.map((item, index) => (
