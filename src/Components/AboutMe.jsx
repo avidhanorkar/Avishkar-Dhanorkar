@@ -2,11 +2,11 @@ import React from "react";
 
 const AboutMe = ({id}) => {
   return (
-    <div className="h-[100vh]  w-full flex" id={id} >
-      <div className="flex flex-col  w-1/2 gap-[50px]">
-        <h1 className="font-lora text-[70px] mt-[50px] font-[700]">About Me</h1>
+    <div className="h-[100vh] w-full flex" id={id} >
+      <div className="flex flex-col w-full lg:w-1/2 gap:[20px] lg:gap-[50px]">
+        <h1 className="font-lora text-[50px] lg:text-[70px] mt-[30px] lg:mt-[50px] font-[700]">About Me</h1>
 
-        <div className="w-full  h-[70vh] text-[20px]">
+        <div className="w-full  h-[70vh] text-[16px] lg:text-[20px]">
           <p>
             I am a highly motivated and results-oriented{" "}
             <span className="font-bold">Full Stack Web Developer</span> with a
@@ -24,7 +24,7 @@ const AboutMe = ({id}) => {
           </p>
         </div>
       </div>
-      <div className="w-1/2 h-[100vh]  flex items-center justify-center">
+      <div className="hidden w-1/2 h-[100vh] lg:flex items-center justify-center">
         <img
           src="/ME.png"
           className="rounded-md bg-slate-700 h-[600px] w-[420px] object-cover"

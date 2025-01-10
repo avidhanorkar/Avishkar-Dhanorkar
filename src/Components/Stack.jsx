@@ -26,11 +26,11 @@ const Stack = () => {
   };
 
   return (
-    <div className="h-[60vh] p-4 ">
+    <div className="lg:h-[60vh] p-4 ">
       <div>
-        <h1 className="text-[70px] font-lora font-[700] text-left">My Stack</h1>
+        <h1 className="text-[50px] lg:text-[70px] font-lora font-[700] text-left">My Stack</h1>
       </div>
-      <div className="flex flex-row justify-between mt-[50px]">
+      <div className="flex lg:flex-row flex-col justify-between mt-[20px] lg:mt-[50px] gap-[20px]">
         {/* Technologies Section */}
         <div className="border-[2px] rounded-md border-[#de8f52] py-7 px-10 w-[300px] text-center">
           <h2 className="text-2xl font-bold mb-4 text-center w-full">Technologies</h2>

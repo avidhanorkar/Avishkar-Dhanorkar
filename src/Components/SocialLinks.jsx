@@ -2,7 +2,7 @@ import React from "react";
 
 const SocialLinks = () => {
   return (
-    <div className="flex gap-[50px] mt-[50px]">
+    <div className="flex gap-[20px] lg:gap-[50px] mt-[20px] lg:mt-[50px]">
       <a href="https://www.linkedin.com/in/avishkar23/">
         <img src="/LinkedIn.svg" alt="" />
       </a>

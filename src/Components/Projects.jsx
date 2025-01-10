@@ -31,17 +31,17 @@ const Projects = ({id}) => {
 
   return (
     <div className="flex flex-col" id={id}>
-      <h1 className="font-lora text-[70px] mt-[50px] font-[700]">
+      <h1 className="font-lora text-[50px] lg:text-[70px] mt-[20px] lg:mt-[50px] font-[700]">
         Some Projects
       </h1>
 
-      <div className="flex flex-col items-center my-[50px] space-y-[50px]">
+      <div className="flex flex-col items-center lg:my-[50px] my-[20px] space-y-[50px]">
         {Object.entries(projects).map(([key, project]) => (
           <div
             key={key}
-            className="w-[70vw] h-[50vh] rounded-md border-2 border-[#f4dd52] p-[30px] flex flex-row justify-between"
+            className="w-[70vw] h-[100vh] lg:h-[70vh] rounded-md border-2 border-[#f4dd52] p-[30px] flex lg:flex-row flex-col justify-between"
           >
-            <div className="w-[40%] flex flex-col gap-[20px]">
+            <div className="lg:w-[40%] w-full flex flex-col gap-[20px]">
               <h1 className="font-lora text-[40px] font-[700]">
                 {project.name}
               </h1>
@@ -70,7 +70,7 @@ const Projects = ({id}) => {
                 ))}
               </div>
             </div>
-            <div className="w-[50%] h-full flex items-center justify-center">
+            <div className="lg:w-[50%] w-full h-full flex items-center justify-center">
               <img
                 src={project.img}
                 className="h-full w-full object-contain"

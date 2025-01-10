@@ -12,7 +12,7 @@ const Portfolio = () => {
   return (
     <>
     <Router>
-      <div className="px-[122px]">
+      <div className="px-[20px] lg:px-[122px]">
         <Hero />
         <AboutMe id="about" />
         <Stack />
