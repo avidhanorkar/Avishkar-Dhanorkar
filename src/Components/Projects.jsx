@@ -39,10 +39,10 @@ const Projects = ({id}) => {
         {Object.entries(projects).map(([key, project]) => (
           <div
             key={key}
-            className="w-full lg:w-[70vw] h-[70vh] lg:h-[55vh] rounded-md border-2 border-[#f4dd52] p-[30px] flex lg:flex-row flex-col justify-between"
+            className="w-full lg:w-[70vw] h-[620px] lg:h-[55vh] rounded-md border-2 border-[#f4dd52] p-[30px] flex lg:flex-row flex-col justify-between"
           >
             <div className="lg:w-[40%] w-full flex flex-col gap-[20px]">
-              <h1 className="font-lora text-[40px] font-[700]">
+              <h1 className="font-lora text-[30px] lg:text-[40px] font-[700]">
                 {project.name}
               </h1>
               <div className="flex flex-row justify-start items-center gap-[25px]">
