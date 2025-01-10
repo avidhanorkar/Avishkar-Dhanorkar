@@ -20,7 +20,7 @@ const Stack = () => {
       { icon: "Postman", Name: "Postman" },
     ],
     Database: [
-      { icon: "", Name: "SQL" },
+      { icon: "", Name: "MySQL" },
       { icon: "", Name: "MongoDB" },
     ],
   };
@@ -60,7 +60,7 @@ const Stack = () => {
           <h2 className="text-2xl font-bold mb-4 text-center w-full">Tools</h2>
           <ul className="list-disc pl-6">
             {data.Tools.map((item, index) => (
-              <li key={index} className="text-lg">
+              <li key={index} className="text-lg ">
                 {item.Name}
               </li>
             ))}
