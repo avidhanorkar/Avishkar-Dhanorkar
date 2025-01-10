@@ -16,9 +16,9 @@ const GetInTouch = ({id}) => {
   return (
     <section className="relative py-20 px-4 overflow-hidden " id={id}>
       <div className="container relative mx-auto max-w-6xl">
-        <div className="text-center mb-12">
-          <h2 className="text-[70px] font-lora font-[700] leading-none">Get in Touch</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto pt-[5px]">
+        <div className=" mb-12">
+          <h2 className=" text-[50px] lg:text-[70px] font-lora font-[700] leading-none">Get in Touch</h2>
+          <p className="text-muted-foreground pt-[10px]">
             I'm always interested in hearing about new projects and opportunities. 
             Feel free to reach out if you'd like to connect!
           </p>
