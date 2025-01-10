@@ -26,7 +26,7 @@ const Stack = () => {
   };
 
   return (
-    <div className="lg:h-[60vh] ">
+    <div className="lg:h-[60vh] mt-[20px] lg:mt-[50px]">
       <div>
         <h1 className="text-[50px] lg:text-[70px] font-lora font-[700] text-left">My Stack</h1>
       </div>

@@ -2,8 +2,8 @@ import React from "react";
 
 const AboutMe = ({id}) => {
   return (
-    <div className="h-[100vh] w-full flex" id={id} >
-      <div className="flex flex-col w-full lg:w-1/2 gap:[20px] lg:gap-[50px]">
+    <div className="min-h-[100vh] max-h-[120] w-full flex" id={id} >
+      <div className="flex flex-col w-full lg:w-1/2  ">
         <h1 className="font-lora text-[50px] lg:text-[70px] mt-[30px] lg:mt-[50px] font-[700]">About Me</h1>
 
         <div className="w-full  h-[70vh] text-[16px] lg:text-[20px]">
@@ -18,9 +18,9 @@ const AboutMe = ({id}) => {
             highly collaborative team player with excellent communication and
             interpersonal skills. I am currently seeking opportunities to
             Software Developer Engineer Roles where I can use my expertise to
-            create solutions for the real world problems. <br /> <br />I am excited to
+            create solutions for the real world problems. <br /> <br /><span className="lg:hidden block xl:block">I am excited to
             connect with you and discuss how my skills and experience can
-            contribute to your team's success
+            contribute to your team's success.</span>
           </p>
         </div>
       </div>
