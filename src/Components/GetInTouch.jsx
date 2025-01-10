@@ -102,8 +102,9 @@ const GetInTouch = ({id}) => {
                     name="message" 
                     placeholder="Tell me about your project..."
                     required
-                    className="min-h-[150px] focus:outline-none border-muted bg-slate-50 resize-none"
+                    className="min-h-[125px] focus:outline-none border-muted bg-slate-50 resize-none"
                   />
+                  <p className='text-right'>Powered by Formspree</p>
                 </div>
 
                 <Button content={isSubmitted ? "Submitted" : "Send Message"} type="submit" />
