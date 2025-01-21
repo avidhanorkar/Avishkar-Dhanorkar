@@ -8,23 +8,23 @@ const Projects = ({id}) => {
       desc: "A blog platform with CRUD features, user authentication, and interactive engagement.",
       img: "/StoryGrid.png",
       tags: ["ReactJS", "TailwindCSS", "MongoDB"],
-      github: "", // Replace with your actual GitHub link
-      liveLink: "", // Replace with your actual live project link
+      github: "https://github.com/avidhanorkar/StoryGrid-Full-Stack-Project", 
+      liveLink: "https://storygrid-full-stack-project-frontend.onrender.com/",
     },
     LocalDukaan: {
       name: "Local Dukaan",
       desc: "An e-commerce platform for empowering local businesses with online presence.",
       img: "/LocalDukaan.png",
       tags: ["ReactJS", "TailwindCSS", "HTML", "CSS"],
-      github: "https://github.com/avidhanorkar/LocalDukaan", // Replace with your actual GitHub link
-      liveLink: "https://local-dukaan.vercel.app/", // No live link indicates it's in development
+      github: "https://github.com/avidhanorkar/LocalDukaan", 
+      liveLink: "https://local-dukaan.vercel.app/", 
     },
     DevClash: {
       name: "DevClash",
       desc: "A coding competition platform with real-time tracking and responsive design.",
       img: "/devclash.png",
       tags: ["ReactJS", "HTML", "CSS"],
-      github: "https://github.com/avidhanorkar/devclash-Avishhkar", // Replace with your actual GitHub link
+      github: "https://github.com/avidhanorkar/devclash-Avishhkar", 
       liveLink: "https://www.devclash.tech",
     },
   };
