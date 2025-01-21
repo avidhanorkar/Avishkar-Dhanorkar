@@ -1,14 +1,14 @@
 import React from "react";
 import Button from "./Button";
 
-const Projects = ({id}) => {
+const Projects = ({ id }) => {
   const projects = {
     StoryGrid: {
       name: "StoryGrid",
       desc: "A blog platform with CRUD features, user authentication, and interactive engagement.",
       img: "/StoryGrid.png",
       tags: ["ReactJS", "TailwindCSS", "MongoDB"],
-      github: "https://github.com/avidhanorkar/StoryGrid-Full-Stack-Project", 
+      github: "https://github.com/avidhanorkar/StoryGrid-Full-Stack-Project",
       liveLink: "https://storygrid-full-stack-project-frontend.onrender.com/",
     },
     LocalDukaan: {
@@ -16,15 +16,15 @@ const Projects = ({id}) => {
       desc: "An e-commerce platform for empowering local businesses with online presence.",
       img: "/LocalDukaan.png",
       tags: ["ReactJS", "TailwindCSS", "HTML", "CSS"],
-      github: "https://github.com/avidhanorkar/LocalDukaan", 
-      liveLink: "https://local-dukaan.vercel.app/", 
+      github: "https://github.com/avidhanorkar/LocalDukaan",
+      liveLink: "https://local-dukaan.vercel.app/",
     },
     DevClash: {
       name: "DevClash",
       desc: "A coding competition platform with real-time tracking and responsive design.",
       img: "/devclash.png",
       tags: ["ReactJS", "HTML", "CSS"],
-      github: "https://github.com/avidhanorkar/devclash-Avishhkar", 
+      github: "https://github.com/avidhanorkar/devclash-Avishhkar",
       liveLink: "https://www.devclash.tech",
     },
   };
@@ -46,15 +46,21 @@ const Projects = ({id}) => {
                 {project.name}
               </h1>
               <div className="flex flex-row justify-start items-center gap-[25px]">
-                <Button
-                  content={
-                    project["liveLink"]
-                      ? "See It in Action"
-                      : "In Development"
-                  }
-                  coloured
-                />
-                <a href={`${project.github}`} target="_blank" rel="noopener noreferrer">
+                <a href={`${project.liveLink}`}>
+                  <Button
+                    content={
+                      project["liveLink"]
+                        ? "See It in Action"
+                        : "In Development"
+                    }
+                    coloured
+                  />
+                </a>
+                <a
+                  href={`${project.github}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src="/GitHub.svg" alt="" />
                 </a>
               </div>
