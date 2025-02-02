@@ -26,7 +26,7 @@ const skillsData = [
 
 function Stack() {
   return (
-    <div className="min-h-screen  px-4 sm:px-6 lg:px-8">
+    <div className="min-h-[80vh]  px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="mb-12">
           <h2 className="font-lora text-[50px] lg:text-[70px] mt-[30px] lg:mt-[50px] font-[700] text-left">

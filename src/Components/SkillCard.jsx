@@ -16,8 +16,8 @@ function SkillCard({ category, skills, icon }) {
   return (
     <div className="bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
       <div className="flex items-center gap-3 mb-4">
-        <div className="p-2 bg-indigo-100 rounded-lg">
-          <Icon className="w-6 h-6 text-indigo-600" />
+        <div className="p-2 bg-black rounded-lg">
+          <Icon className="w-6 h-6 text-[#fbf2ba]" />
         </div>
         <h3 className="text-xl font-semibold text-gray-800">{category}</h3>
       </div>
