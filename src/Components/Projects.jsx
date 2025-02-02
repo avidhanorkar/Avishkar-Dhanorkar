@@ -27,6 +27,14 @@ const Projects = ({ id }) => {
       github: "https://github.com/avidhanorkar/devclash-Avishhkar",
       liveLink: "https://www.devclash.tech",
     },
+    HungryChef: {
+      name: "Hungry Chef",
+      desc: "A restaurant chain that offers online table reservation and food ordering.",
+      img: "/",
+      tags: ["ReactJS", "TailwindCSS", "Express", "MongoDB", "ShadCN"],
+      github: "https://github.com/avidhanorkar/Hungry-Chef",
+      liveLink:""
+    }
   };
 
   return (
