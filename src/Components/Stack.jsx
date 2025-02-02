@@ -1,86 +1,55 @@
-import React from "react";
+import React from 'react';
+import SkillCard from './SkillCard';
 
-const Stack = () => {
-  const data = {
-    technologies: [
-      { icon: "a", Name: "JavaScript" },
-      { icon: "", Name: "HTML/CSS" },
-      { icon: "Java", Name: "Java" },
-      { icon: "", Name: "TypeScript" },
-      { icon: "", Name: "NodeJS" },
-    ],
-    "Libraries/Framework": [
-      { icon: "", Name: "ReactJS" },
-      { icon: "", Name: "TailwindCSS" },
-    ],
-    Tools: [
-      { icon: "", Name: "Git/GitHub" },
-      { icon: "", Name: "VS Code" },
-      { icon: "Figma", Name: "Figma" },
-      { icon: "Postman", Name: "Postman" },
-    ],
-    Database: [
-      { icon: "", Name: "MySQL" },
-      { icon: "", Name: "MongoDB" },
-    ],
-  };
+const skillsData = [
+  {
+    category: 'Frontend Development',
+    icon: 'frontend',
+    skills: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js', 'HTML5', 'CSS3', 'JavaScript'],
+  },
+  {
+    category: 'Backend Development',
+    icon: 'backend',
+    skills: ['Node.js', 'Express', 'REST APIs'],
+  },
+  {
+    category: 'Database Technologies',
+    icon: 'database',
+    skills: ['PostgreSQL', 'MongoDB', 'MySQL', 'Prisma'],
+  },
+  {
+    category: 'Programming Languages',
+    icon: 'languages',
+    skills: ['JavaScript', 'TypeScript', 'Python', 'Java'],
+  },
+];
 
+function Stack() {
   return (
-    <div className="lg:h-[60vh] mt-[20px] lg:mt-[50px]">
-      <div>
-        <h1 className="text-[50px] lg:text-[70px] font-lora font-[700] text-left">My Stack</h1>
-      </div>
-      <div className="flex lg:flex-row flex-col justify-between mt-[20px] lg:mt-[50px] gap-[20px]">
-        {/* Technologies Section */}
-        <div className="border-[2px] rounded-md border-[#de8f52] py-7 px-10 w-full lg:w-[300px] text-center">
-          <h2 className="text-2xl font-bold mb-4 text-center w-full">Technologies</h2>
-          <ul className="list-disc pl-6">
-            {data.technologies.map((item, index) => (
-              <li key={index} className="text-lg">
-                {item.Name}
-              </li>
-            ))}
-          </ul>
+    <div className="min-h-screen  px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="mb-12">
+          <h2 className="font-lora text-[50px] lg:text-[70px] mt-[30px] lg:mt-[50px] font-[700] text-left">
+            Technical Skills
+          </h2>
+          <p className="text-[20px]">
+            A comprehensive overview of my technical expertise and capabilities
+          </p>
         </div>
-
-        {/* Libraries/Framework Section */}
-        <div className="border-[2px] rounded-md border-[#97b955] py-7 px-10 lg:w-[300px] w-full text-center">
-          <h2 className="text-2xl font-bold mb-4 text-center w-full">Libraries</h2>
-          <ul className="list-disc pl-6">
-            {data["Libraries/Framework"].map((item, index) => (
-              <li key={index} className="text-lg">
-                {item.Name}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Tools Section */}
-        <div className="border-[2px] rounded-md border-[#f4dd52] py-7 px-10 lg:w-[300px] w-full text-center">
-          <h2 className="text-2xl font-bold mb-4 text-center w-full">Tools</h2>
-          <ul className="list-disc pl-6">
-            {data.Tools.map((item, index) => (
-              <li key={index} className="text-lg ">
-                {item.Name}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Database Section */}
-        <div className="border-[2px] rounded-md border-[#000] py-7 px-10 lg:w-[300px] w-full text-center">
-          <h2 className="text-2xl font-bold mb-4 text-center w-full">Database</h2>
-          <ul className="list-disc pl-6">
-            {data.Database.map((item, index) => (
-              <li key={index} className="text-lg">
-                {item.Name}
-              </li>
-            ))}
-          </ul>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {skillsData.map((category) => (
+            <SkillCard
+              key={category.category}
+              category={category.category}
+              skills={category.skills}
+              icon={category.icon}
+            />
+          ))}
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Stack;
