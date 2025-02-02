@@ -30,7 +30,7 @@ const Projects = ({ id }) => {
     HungryChef: {
       name: "Hungry Chef",
       desc: "A restaurant chain that offers online table reservation and food ordering.",
-      img: "/Screenshot 2025-02-03 002534.png",
+      img: "/HungryChef.png",
       tags: ["ReactJS", "TailwindCSS", "Express", "MongoDB", "ShadCN"],
       github: "https://github.com/avidhanorkar/Hungry-Chef",
       liveLink:""
